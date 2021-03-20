@@ -7,9 +7,9 @@ import android.view.View;
 import java.util.jar.Attributes;
 
 /**
- * author： deemons
- * date:    2018/9/28
- * desc:
+ * @author HB.SuZhanFeng
+ * @date 2021-03-18
+ * @desc
  */
 public interface Injector {
 

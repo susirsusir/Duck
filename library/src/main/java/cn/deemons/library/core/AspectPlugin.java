@@ -4,11 +4,11 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
-import cn.deemons.library.view.DuckFrameLayout;
-import cn.deemons.library.view.DuckLinearLayout;
-import cn.deemons.library.view.DuckRelativeLayout;
-import cn.deemons.library.view.DuckScrollView;
-import cn.deemons.library.view.DuckTableLayout;
+import cn.deemons.library.view.HbFrameLayout;
+import cn.deemons.library.view.HbLinearLayout;
+import cn.deemons.library.view.HbRelativeLayout;
+import cn.deemons.library.view.HbScrollView;
+import cn.deemons.library.view.HbTableLayout;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.Signature;
@@ -18,14 +18,14 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
 
 /**
- * author： deemons
- * date:    2018/9/4
- * desc:
+ * @author HB.SuZhanFeng
+ * @date 2021-03-16
+ * @desc
  */
 @Aspect
 public class AspectPlugin {
 
-    private static final String TAG = "Duck";
+    private static final String TAG = "HbPlugin";
     private static int lastHash = 0;
 
     //@Pointcut("execution(* *.onCreateView(..))")
@@ -76,15 +76,15 @@ public class AspectPlugin {
 
         switch (name) {
             case "RelativeLayout":
-                return new DuckRelativeLayout(context, attrs);
+                return new HbRelativeLayout(context, attrs);
             case "LinearLayout":
-                return new DuckLinearLayout(context, attrs);
+                return new HbLinearLayout(context, attrs);
             case "FrameLayout":
-                return new DuckFrameLayout(context, attrs);
+                return new HbFrameLayout(context, attrs);
             case "TableLayout":
-                return new DuckTableLayout(context, attrs);
+                return new HbTableLayout(context, attrs);
             case "ScrollView":
-                return new DuckScrollView(context, attrs);
+                return new HbScrollView(context, attrs);
             default:
                 break;
         }
@@ -118,7 +118,7 @@ public class AspectPlugin {
         }
 
         Log.i(TAG, "inject =====> " + signature.toString());
-        DuckFactor.getFactor().inject((View) target, context, attrs);
+        HbFactor.getFactor().inject((View) target, context, attrs);
 
     }
 

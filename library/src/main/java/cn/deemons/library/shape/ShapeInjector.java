@@ -16,9 +16,9 @@ import cn.deemons.library.R;
 import cn.deemons.library.core.Injector;
 
 /**
- * @author： deemons
- * date:    2018/9/28
- * desc:
+ * @author HB.SuZhanFeng
+ * @date 2021-03-19
+ * @desc
  */
 public class ShapeInjector implements Injector {
 

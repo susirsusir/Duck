@@ -3,11 +3,11 @@ package cn.deemons.library.core;
 import cn.deemons.library.shape.ShapeInjector;
 
 /**
- * author： deemons
- * date:    2018/9/28
- * desc:
+ * @author HB.SuZhanFeng
+ * @date 2021-03-18
+ * @desc
  */
-public class DuckFactor {
+public class HbFactor {
 
     private static Injector mInjector;
 

@@ -18,9 +18,9 @@ import static android.graphics.drawable.GradientDrawable.RECTANGLE;
 import static android.graphics.drawable.GradientDrawable.RING;
 
 /**
- * author： deemons
- * date:    2018/9/3
- * desc:
+ * @author HB.SuZhanFeng
+ * @date 2021-03-20
+ * @desc
  */
 public class ShapeUtils {
 
