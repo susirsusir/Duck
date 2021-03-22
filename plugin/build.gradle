@@ -17,8 +17,8 @@ repositories {
 uploadArchives {
     repositories.mavenDeployer {
         repository(url: uri('../repo')) //仓库的路径，此处是项目根目录下的 repo 的文件夹
-        pom.groupId = 'com.deemons.plugin'  //groupId ，自行定义，一般是包名
-        pom.artifactId = 'duck' //artifactId ，自行定义
+        pom.groupId = 'hb.drawable.plugin'  //groupId ，自行定义，一般是包名
+        pom.artifactId = 'drawable' //artifactId ，自行定义
         pom.version = '0.0.4' //version 版本号
     }
 }
