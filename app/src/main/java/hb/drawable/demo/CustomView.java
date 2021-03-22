@@ -9,9 +9,9 @@ import android.util.AttributeSet;
 import android.view.View;
 
 /**
- * author： deemons
- * date:    2019/2/22
- * desc:
+ * @author HB.SuZhanFeng
+ * @date 2021-03-22
+ * @desc
  */
 public class CustomView extends View {
     public CustomView(Context context) {
