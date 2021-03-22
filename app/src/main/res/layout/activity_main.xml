@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EFEFF4"
-    tools:context="cn.deemons.duck.MainActivity"
+    tools:context="hb.drawable.demo.MainActivity"
     tools:ignore="MissingPrefix">
 
 
@@ -221,7 +221,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:gravity="center"
-            android:text="上述效果全部是在 TextView 上完成\n其实 Duck 支持任意控件" />
+            android:text="上述效果全部是在 TextView 上完成\n其实 支持任意控件" />
 
 
         <Button
@@ -257,7 +257,7 @@
             app:stroke_color="@color/colorPrimary"
             android:layout_height="40dp" />
 
-        <cn.deemons.duck.CustomView
+        <hb.drawable.demo.CustomView
             android:layout_width="200dp"
             app:corner="20dp"
             app:stroke_color="@color/colorPrimaryDark"

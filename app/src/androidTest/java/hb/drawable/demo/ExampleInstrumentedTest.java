@@ -1,4 +1,4 @@
-package hb.drawable.duck;
+package hb.drawable.demo;
 
 import android.content.Context;
 import androidx.test.InstrumentationRegistry;

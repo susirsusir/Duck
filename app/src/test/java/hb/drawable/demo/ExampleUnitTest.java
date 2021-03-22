@@ -1,4 +1,4 @@
-package hb.drawable.duck;
+package hb.drawable.demo;
 
 import org.junit.Test;
 

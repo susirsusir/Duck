@@ -2,12 +2,10 @@ apply plugin: 'com.android.application'
 
 apply plugin: 'android-aspectjx'
 
-//apply plugin: 'com.deemons.duck'
-
 android {
     compileSdkVersion 29
     defaultConfig {
-        applicationId "cn.deemons.duck"
+        applicationId "hb.drawable.demo"
         minSdkVersion 16
         targetSdkVersion 29
         versionCode 1
@@ -31,7 +29,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
     implementation project(':library')
-//    implementation 'com.deemons.duck:duck:0.0.2'
     debugImplementation 'com.facebook.stetho:stetho:1.5.0'
     debugImplementation 'com.facebook.stetho:stetho-okhttp3:1.5.0'
 
