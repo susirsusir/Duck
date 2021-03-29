@@ -6,7 +6,7 @@ android {
 
 
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 19
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -31,6 +31,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     api 'org.aspectj:aspectjrt:1.8.13'
     api 'androidx.annotation:annotation:1.1.0'
+    compileOnly 'androidx.appcompat:appcompat:1.0.0'
 }
 
 //for upload

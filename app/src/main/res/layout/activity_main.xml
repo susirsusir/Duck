@@ -259,7 +259,7 @@
 
         <hb.drawable.demo.CustomView
             android:layout_width="200dp"
-            app:corner="20dp"
+            app:corner="10dp"
             app:stroke_color="@color/colorPrimaryDark"
             app:stroke_width="1dp"
             android:layout_marginTop="10dp"

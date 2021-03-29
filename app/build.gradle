@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
-apply plugin: 'android-aspectjx'
+//apply plugin: 'android-aspectjx'
 
 android {
     compileSdkVersion 29
     defaultConfig {
         applicationId "hb.drawable.demo"
-        minSdkVersion 16
+        minSdkVersion 19
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -32,9 +32,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-    implementation 'hb:drawable:0.0.1_test_1'
-
-//    implementation project(':library')
+    implementation project(':library')
     debugImplementation 'com.facebook.stetho:stetho:1.5.0'
     debugImplementation 'com.facebook.stetho:stetho-okhttp3:1.5.0'
 

@@ -26,7 +26,7 @@ public class ShapeInjector implements Injector {
     static final int SIZE_EMPTY_VALUE = -3;
 
     @Override
-    public void inject(View view, Context context, AttributeSet attrs) {
+    public View inject(View view, Context context, AttributeSet attrs) {
 
         TypedArray shapeType = context.obtainStyledAttributes(attrs, R.styleable.Shape);
 
@@ -180,6 +180,8 @@ public class ShapeInjector implements Injector {
             view.setBackground(utils.create());
             Log.i("Duck", "createShape");
         }
+
+        return view;
     }
 
 

@@ -1,7 +1,10 @@
 package hb.drawable.demo;
 
 import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
+
+import hb.drawable.shape.ShapeLibrary;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -10,15 +13,15 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
+        ShapeLibrary.inject(this);
 //        LayoutInflaterCompat.setFactory2(LayoutInflater.from(this), new LayoutInflater.Factory2() {
 //            @Override
 //            public View onCreateView(View parent, String name, Context context, AttributeSet attrs) {
 //
-//                Log.e(TAG, "name = " + name);
+//                Log.e(TAG, "name = " + name + " parent: " + parent);
 //                int n = attrs.getAttributeCount();
 //                for (int i = 0; i < n; i++) {
-//                    Log.e(TAG, attrs.getAttributeName(i) + " , " + attrs.getAttributeValue(i));
+////                    Log.e(TAG, attrs.getAttributeName(i) + " , " + attrs.getAttributeValue(i));
 //                }
 //
 //                return null;

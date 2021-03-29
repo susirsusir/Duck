@@ -17,7 +17,8 @@ public interface Injector {
      * @param view    View
      * @param context Context
      * @param attrs   AttributeSet
+     * @return View
      */
-    void inject(View view, Context context, AttributeSet attrs);
+    View inject(View view, Context context, AttributeSet attrs);
 
 }
