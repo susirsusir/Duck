@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingPrefix"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="圆角为高度一半\n corner 大于等于高度一半"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
+        app:corner="300dp"
+        app:stroke_color="@color/colorPrimary"
+        app:stroke_width="1dp" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="指定圆角大小"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
+        app:corner="8dp"
+        app:stroke_color="@color/colorPrimary"
+        app:stroke_width="1dp" />
+</LinearLayout>

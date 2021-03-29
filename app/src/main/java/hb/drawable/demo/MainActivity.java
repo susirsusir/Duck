@@ -1,6 +1,7 @@
 package hb.drawable.demo;
 
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -38,6 +39,13 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        findViewById(R.id.firstView).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MyDialog dialog = new MyDialog(MainActivity.this);
+                dialog.show();
+            }
+        });
 
 //        TextView view = findViewById(R.id.text);
 //        ConstraintLayout root = findViewById(R.id.root_view);
