@@ -28,14 +28,4 @@ dependencies {
     compileOnly 'androidx.appcompat:appcompat:1.1.0'
 }
 
-//for upload
-apply plugin: 'com.novoda.bintray-release'
-publish {
-    userOrg = 'deemons' //注册的用户名
-    groupId = 'com.deemons.duck' //引用时第一部分
-    artifactId = 'duckx' //引用时的第二部分
-    publishVersion = '1.0.0' //引用时的第三部分，版本号
-    desc = 'android shape'//描述
-    website = 'https://github.com/Deemonser/Duck'//项目地址
-}
 
