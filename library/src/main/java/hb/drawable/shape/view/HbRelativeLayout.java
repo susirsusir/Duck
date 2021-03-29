@@ -4,6 +4,8 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.RelativeLayout;
 
+import hb.drawable.shape.shape.ShapeFactory;
+
 /**
  * @author HB.SuZhanFeng
  * @date 2021-03-18
@@ -21,6 +23,10 @@ public class HbRelativeLayout extends RelativeLayout {
 
     public HbRelativeLayout(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+    }
+
+    private void init(Context context, AttributeSet attrs) {
+        ShapeFactory.setViewBackground(context, attrs, this);
     }
 
 }

@@ -1,29 +1,24 @@
 package hb.drawable.shape.view;
 
 import android.content.Context;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import android.util.AttributeSet;
-import android.widget.FrameLayout;
+
+import androidx.appcompat.widget.AppCompatImageButton;
 
 import hb.drawable.shape.shape.ShapeFactory;
 
-/**
- * @author HB.SuZhanFeng
- * @date 2021-03-18
- * @desc
- */
-public class HbFrameLayout extends FrameLayout {
-    public HbFrameLayout(@NonNull Context context) {
+
+public class HbImageButton extends AppCompatImageButton {
+    public HbImageButton(Context context) {
         super(context);
     }
 
-    public HbFrameLayout(@NonNull Context context, @Nullable AttributeSet attrs) {
+    public HbImageButton(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(context, attrs);
     }
 
-    public HbFrameLayout(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public HbImageButton(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init(context, attrs);
     }

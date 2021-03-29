@@ -35,6 +35,10 @@ public class ShapeFactory implements LayoutInflater.Factory2 {
 
     @Override
     public View onCreateView(String name, Context context, AttributeSet attrs) {
+        //如果是blview，代表已经进行了背景设置，无需再次创建，留给系统创建就行
+        if(name.startsWith("hb.drawable.shape.view")){
+            return null;
+        }
         View view = null;
 
         //防止与其他调用factory库冲突，例如字体、皮肤替换库，用已经设置的factory来创建view
@@ -71,6 +75,11 @@ public class ShapeFactory implements LayoutInflater.Factory2 {
             e.printStackTrace();
             return view;
         }
+    }
+
+    @Nullable
+    public static View setViewBackground(Context context, AttributeSet attrs, View view){
+        return setViewBackground(null, context, attrs, view);
     }
 
     public void setInterceptFactory(LayoutInflater.Factory factory) {
