@@ -19,10 +19,12 @@ public class HbRelativeLayout extends RelativeLayout {
 
     public HbRelativeLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
+        init(context, attrs);
     }
 
     public HbRelativeLayout(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        init(context, attrs);
     }
 
     private void init(Context context, AttributeSet attrs) {
